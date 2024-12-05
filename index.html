@@ -11,36 +11,48 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-[#FFFFFF] ms-20 me-20 mt-10">
+<body>
 
     <!-- header start -->
-    <header class="header-section shadow">
+    <header class="container mx-auto header-section shadow lg:my-5 space-y-10">
         <!-- navbar start  -->
-        <nav class="w-full h-[80px] border-4  flex justify-between items-center ps-4 pe-4">
-            <h1 class="text-3xl text-[#0F0F0F] font-extrabold ms-20">Nerdy</h1>
-            <ul class="flex justify-between items-center gap-7">
-                <li><a href="#" class="text-xl text-[#0F0F0F]">Home</a></li>
-                <li><a href="#" class="text-xl text-[#0F0F0F]">Project</a></li>
-                <li><a href="#" class="text-xl text-[#0F0F0F]">About</a></li>
-                <li><a href="#" class="text-xl text-[#0F0F0F]">Contact</a></li>
-            </ul>
-            <div class="me-20"><button
+        <nav class="w-full h-[80px] border-2  flex justify-between items-center px-5">
+            <h1 class="text-3xl text-[#0F0F0F] font-extrabold lg:ms-20">Nerdy</h1>
+            <div class="menuItem hidden lg:block">
+                <ul class="flex justify-between items-center gap-7">
+                    <li class=" bg-orange-100 border rounded-lg p-2"><a href="#"
+                            class="text-xl text-orange-500">Home</a></li>
+                    <li><a href="#" class="text-xl text-[#0F0F0F]">Project</a></li>
+                    <li><a href="#" class="text-xl text-[#0F0F0F]">About</a></li>
+                    <li><a href="#" class="text-xl text-[#0F0F0F]">Contact</a></li>
+                </ul>
+            </div>
+            <div class="lg:me-20"><button
                     class="w-[150px] h-[40px] bg-lime-500 rounded-2xl hover:bg-blue-600 text-xl font-bold">Buy
-                    Now</button></div>
+                    Now</button>
+            </div>
+            <div class="hamburger-icon lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </div>
         </nav>
         <!-- navbar end -->
         <!-- bannar section start  -->
 
-        <section class="w-full h-[600px] flex justify-between items-center">
-            <div class=" ms-20">
-                <h1 class="text-6xl font-extrabold">Designed to <br> combine style and <br> functionality.</h1>
-                <p class="text-xl pt-7 pb-7">Unlock your potential with Phitron's Online Judge, a dynamic platform <br>
-                    for honing your coding skills through a diverse range of challenges for <br> all experience levels.
-                </p>
-                <button class="w-[150px] h-[40px] rounded-2xl bg-[#D8FB78] hover:bg-blue-600">Explore Deal</button>
+        <section class="w-full lg:h-[600px] lg:flex justify-between items-center space-y-10">
+            <div class="mx-7 md:order-1 order-2">
+                <h1 class="md:text-6xl text-4xl font-extrabold ">Designed to <br> combine style and <br> functionality.</h1>
+                    <p class="text-xl pt-7 pb-7">Unlock your potential with Phitron's Online Judge, a dynamic platform <br>
+                        for honing your coding skills through a diverse range of challenges for <br> all experience levels.
+                    </p>
+                    <button class="w-[150px] h-[40px] rounded-2xl bg-[#D8FB78] hover:bg-blue-600">Explore Deal</button>
             </div>
-            <div class="me-20">
-                <img src="./image/Rectangle 17854.png" alt="">
+            <div class="lg:order-2 order-1 mx-7">
+                <img class="w-full object-cover h-full" src="./image/Rectangle 17854.png" alt="">
             </div>
         </section>
         <!-- bannar section end -->
@@ -48,77 +60,89 @@
     <!-- header end -->
 
     <!-- card part start  -->
-    <section class="text shadow mt-7">
-        <div class="text-center">
+    <section class="container mx-auto text shadow mt-7">
+        <div class="lg:text-center mx-7">
             <h1 class="text-4xl font-extrabold pt-7 pb-2">Best Selling Products</h1>
             <p class="text-xl pt-2 pb-7">Unlock your potential with Phitron's Online Judge, a dynamic platform for
                 honing your coding skills through a <br> diverse range of challenges for all experience levels.</p>
         </div>
-        <div class=" grid grid-cols-3 gap-8 pb-[30px]">
-            <div class="w-[450px] h-[600px] shadow ms-[60px]">
-                <div class="w-[400px] h-[300px] bg-[#0F0F0F0D] mt-[25px] ms-[25px] rounded-[30px] shadow">
-                    <img class="ms-[75px] mt-[25px] inline-block" src="./image/model-demonstrating-winter-cloths 1.png"
+        <div class=" grid lg:grid-cols-3 lg:gap-8 pb-[30px] justify-center">
+            <div class="lg:w-[450px] w-[450px] md:w-[650px] lg:h-[600px] h-[600px] md:h-[700px] shadow lg:ms-[50px]">
+                <div class="lg:w-[400px] w-[400px] md:w-[600px] lg:h-[300px] h-[300px] md:h-[350px] bg-[#0F0F0F0D] mt-[25px] ms-[25px] rounded-[30px] shadow">
+                    <img class="lg:ms-[75px] ms-[75px] md:ms-[180px] lg:mt-[25px] mt-[25px] md:mt-[75px] inline-block" src="./image/model-demonstrating-winter-cloths 1.png"
                         alt="">
                 </div>
                 <h2 class="mt-7 text-2xl font-bold ms-[25px]">Balenciaga Floral-Print Silk Shirt</h2>
                 <p class="mt-1 ms-[25px] pb-4 text-xl">$1644.00</p>
-                <button class=" w-[400px] h-[60px] bg-[#D8FB78] ms-[25px] text-2xl rounded-[20px] hover:bg-blue-600">Buy Now</button><br>
-                <button class="w-[300px] h-[60px] ms-[25px] shadow mt-[20px] rounded-[20px] hover:bg-blue-600">Add to cart</button>
+                <button class=" lg:w-[400px] w-[400px] md:w-[600px] h-[60px] bg-[#D8FB78] ms-[25px] text-2xl rounded-[20px] hover:bg-blue-600">Buy
+                    Now</button><br>
+                <button class="lg:w-[300px] w-[300px] md:w-[500px] h-[60px] ms-[25px] shadow mt-[20px] rounded-[20px] hover:bg-blue-600">Add to
+                    cart</button>
                 <a href="#"><img class="w-[50px] h-[50px] inline-block ms-[20px]" src="./image/heart1.png" alt=""></a>
             </div>
-            <div class="w-[450px] h-[600px] shadow ms-[30px]">
-                <div class="w-[400px] h-[300px] bg-[#0F0F0F0D] mt-[25px] ms-[25px] rounded-[30px] shadow">
-                    <img class="ms-[75px] mt-[25px] inline-block" src="./image/model-demonstrating-winter-cloths 1.png"
+            <div class="lg:w-[450px] w-[450px] md:w-[650px] lg:h-[600px] h-[600px] md:h-[700px] shadow lg:ms-[50px]">
+                <div class="lg:w-[400px] w-[400px] md:w-[600px] lg:h-[300px] h-[300px] md:h-[350px] bg-[#0F0F0F0D] mt-[25px] ms-[25px] rounded-[30px] shadow">
+                    <img class="lg:ms-[75px] ms-[75px] md:ms-[180px] lg:mt-[25px] mt-[25px] md:mt-[75px] inline-block" src="./image/model-demonstrating-winter-cloths 1.png"
                         alt="">
                 </div>
                 <h2 class="mt-7 text-2xl font-bold ms-[25px]">Balenciaga Floral-Print Silk Shirt</h2>
                 <p class="mt-1 ms-[25px] pb-4 text-xl">$1644.00</p>
-                <button class=" w-[400px] h-[60px] bg-[#D8FB78] ms-[25px] text-2xl rounded-[20px] hover:bg-blue-600">Buy Now</button><br>
-                <button class="w-[300px] h-[60px] ms-[25px] shadow mt-[20px] rounded-[20px] hover:bg-blue-600">Add to cart</button>
+                <button class=" lg:w-[400px] w-[400px] md:w-[600px] h-[60px] bg-[#D8FB78] ms-[25px] text-2xl rounded-[20px] hover:bg-blue-600">Buy
+                    Now</button><br>
+                <button class="lg:w-[300px] w-[300px] md:w-[500px] h-[60px] ms-[25px] shadow mt-[20px] rounded-[20px] hover:bg-blue-600">Add to
+                    cart</button>
                 <a href="#"><img class="w-[50px] h-[50px] inline-block ms-[20px]" src="./image/heart2.png" alt=""></a>
             </div>
-            <div class="w-[450px] h-[600px] shadow">
-                <div class="w-[400px] h-[300px] bg-[#0F0F0F0D] mt-[25px] ms-[25px] rounded-[30px] shadow">
-                    <img class="ms-[75px] mt-[25px] inline-block" src="./image/model-demonstrating-winter-cloths 1.png"
+            <div class="lg:w-[450px] w-[450px] md:w-[650px] lg:h-[600px] h-[600px] md:h-[700px] shadow lg:ms-[50px]">
+                <div class="lg:w-[400px] w-[400px] md:w-[600px] lg:h-[300px] h-[300px] md:h-[350px] bg-[#0F0F0F0D] mt-[25px] ms-[25px] rounded-[30px] shadow">
+                    <img class="lg:ms-[75px] ms-[75px] md:ms-[180px] lg:mt-[25px] mt-[25px] md:mt-[75px] inline-block" src="./image/model-demonstrating-winter-cloths 1.png"
                         alt="">
                 </div>
                 <h2 class="mt-7 text-2xl font-bold ms-[25px]">Balenciaga Floral-Print Silk Shirt</h2>
                 <p class="mt-1 ms-[25px] pb-4 text-xl">$1644.00</p>
-                <button class=" w-[400px] h-[60px] bg-[#D8FB78] ms-[25px] text-2xl rounded-[20px] hover:bg-blue-600">Buy Now</button><br>
-                <button class="w-[300px] h-[60px] ms-[25px] shadow mt-[20px] rounded-[20px] hover:bg-blue-600">Add to cart</button>
+                <button class=" lg:w-[400px] w-[400px] md:w-[600px] h-[60px] bg-[#D8FB78] ms-[25px] text-2xl rounded-[20px] hover:bg-blue-600">Buy
+                    Now</button><br>
+                <button class="lg:w-[300px] w-[300px] md:w-[500px] h-[60px] ms-[25px] shadow mt-[20px] rounded-[20px] hover:bg-blue-600">Add to
+                    cart</button>
                 <a href="#"><img class="w-[50px] h-[50px] inline-block ms-[20px]" src="./image/heart2.png" alt=""></a>
             </div>
-            <div class="w-[450px] h-[600px] shadow ms-[60px]">
-                <div class="w-[400px] h-[300px] bg-[#0F0F0F0D] mt-[25px] ms-[25px] rounded-[30px] shadow">
-                    <img class="ms-[75px] mt-[25px] inline-block" src="./image/model-demonstrating-winter-cloths 1.png"
+            <div class="lg:w-[450px] w-[450px] md:w-[650px] lg:h-[600px] h-[600px] md:h-[700px] shadow lg:ms-[50px]">
+                <div class="lg:w-[400px] w-[400px] md:w-[600px] lg:h-[300px] h-[300px] md:h-[350px] bg-[#0F0F0F0D] mt-[25px] ms-[25px] rounded-[30px] shadow">
+                    <img class="lg:ms-[75px] ms-[75px] md:ms-[180px] lg:mt-[25px] mt-[25px] md:mt-[75px] inline-block" src="./image/model-demonstrating-winter-cloths 1.png"
                         alt="">
                 </div>
                 <h2 class="mt-7 text-2xl font-bold ms-[25px]">Balenciaga Floral-Print Silk Shirt</h2>
                 <p class="mt-1 ms-[25px] pb-4 text-xl">$1644.00</p>
-                <button class=" w-[400px] h-[60px] bg-[#D8FB78] ms-[25px] text-2xl rounded-[20px] hover:bg-blue-600">Buy Now</button><br>
-                <button class="w-[300px] h-[60px] ms-[25px] shadow mt-[20px] rounded-[20px] hover:bg-blue-600">Add to cart</button>
-                <a href="#"><img class="w-[50px] h-[50px] inline-block ms-[20px]" src="./image/heart1.png" alt=""></a>
-            </div>
-            <div class="w-[450px] h-[600px] shadow ms-[30px]">
-                <div class="w-[400px] h-[300px] bg-[#0F0F0F0D] mt-[25px] ms-[25px] rounded-[30px] shadow">
-                    <img class="ms-[75px] mt-[25px] inline-block" src="./image/model-demonstrating-winter-cloths 1.png"
-                        alt="">
-                </div>
-                <h2 class="mt-7 text-2xl font-bold ms-[25px]">Balenciaga Floral-Print Silk Shirt</h2>
-                <p class="mt-1 ms-[25px] pb-4 text-xl">$1644.00</p>
-                <button class=" w-[400px] h-[60px] bg-[#D8FB78] ms-[25px] text-2xl rounded-[20px] hover:bg-blue-600">Buy Now</button><br>
-                <button class="w-[300px] h-[60px] ms-[25px] shadow mt-[20px] rounded-[20px] hover:bg-blue-600">Add to cart</button>
+                <button class=" lg:w-[400px] w-[400px] md:w-[600px] h-[60px] bg-[#D8FB78] ms-[25px] text-2xl rounded-[20px] hover:bg-blue-600">Buy
+                    Now</button><br>
+                <button class="lg:w-[300px] w-[300px] md:w-[500px] h-[60px] ms-[25px] shadow mt-[20px] rounded-[20px] hover:bg-blue-600">Add to
+                    cart</button>
                 <a href="#"><img class="w-[50px] h-[50px] inline-block ms-[20px]" src="./image/heart2.png" alt=""></a>
             </div>
-            <div class="w-[450px] h-[600px] shadow">
-                <div class="w-[400px] h-[300px] bg-[#0F0F0F0D] mt-[25px] ms-[25px] rounded-[30px] shadow">
-                    <img class="ms-[75px] mt-[25px] inline-block" src="./image/model-demonstrating-winter-cloths 1.png"
+            <div class="lg:w-[450px] w-[450px] md:w-[650px] lg:h-[600px] h-[600px] md:h-[700px] shadow lg:ms-[50px]">
+                <div class="lg:w-[400px] w-[400px] md:w-[600px] lg:h-[300px] h-[300px] md:h-[350px] bg-[#0F0F0F0D] mt-[25px] ms-[25px] rounded-[30px] shadow">
+                    <img class="lg:ms-[75px] ms-[75px] md:ms-[180px] lg:mt-[25px] mt-[25px] md:mt-[75px] inline-block" src="./image/model-demonstrating-winter-cloths 1.png"
                         alt="">
                 </div>
                 <h2 class="mt-7 text-2xl font-bold ms-[25px]">Balenciaga Floral-Print Silk Shirt</h2>
                 <p class="mt-1 ms-[25px] pb-4 text-xl">$1644.00</p>
-                <button class=" w-[400px] h-[60px] bg-[#D8FB78] ms-[25px] text-2xl rounded-[20px] hover:bg-blue-600">Buy Now</button><br>
-                <button class="w-[300px] h-[60px] ms-[25px] shadow mt-[20px] rounded-[20px] hover:bg-blue-600">Add to cart</button>
+                <button class=" lg:w-[400px] w-[400px] md:w-[600px] h-[60px] bg-[#D8FB78] ms-[25px] text-2xl rounded-[20px] hover:bg-blue-600">Buy
+                    Now</button><br>
+                <button class="lg:w-[300px] w-[300px] md:w-[500px] h-[60px] ms-[25px] shadow mt-[20px] rounded-[20px] hover:bg-blue-600">Add to
+                    cart</button>
+                <a href="#"><img class="w-[50px] h-[50px] inline-block ms-[20px]" src="./image/heart2.png" alt=""></a>
+            </div>
+            <div class="lg:w-[450px] w-[450px] md:w-[650px] lg:h-[600px] h-[600px] md:h-[700px] shadow lg:ms-[50px]">
+                <div class="lg:w-[400px] w-[400px] md:w-[600px] lg:h-[300px] h-[300px] md:h-[350px] bg-[#0F0F0F0D] mt-[25px] ms-[25px] rounded-[30px] shadow">
+                    <img class="lg:ms-[75px] ms-[75px] md:ms-[180px] lg:mt-[25px] mt-[25px] md:mt-[75px] inline-block" src="./image/model-demonstrating-winter-cloths 1.png"
+                        alt="">
+                </div>
+                <h2 class="mt-7 text-2xl font-bold ms-[25px]">Balenciaga Floral-Print Silk Shirt</h2>
+                <p class="mt-1 ms-[25px] pb-4 text-xl">$1644.00</p>
+                <button class=" lg:w-[400px] w-[400px] md:w-[600px] h-[60px] bg-[#D8FB78] ms-[25px] text-2xl rounded-[20px] hover:bg-blue-600">Buy
+                    Now</button><br>
+                <button class="lg:w-[300px] w-[300px] md:w-[500px] h-[60px] ms-[25px] shadow mt-[20px] rounded-[20px] hover:bg-blue-600">Add to
+                    cart</button>
                 <a href="#"><img class="w-[50px] h-[50px] inline-block ms-[20px]" src="./image/heart2.png" alt=""></a>
             </div>
         </div>
@@ -126,39 +150,33 @@
     <!-- card part end -->
 
     <!-- footer section start  -->
-     <footer class="h-[500px] mb-[50px] flex justify-center items-center shadow">
-        <div class=" h-[200px] w-[800px] mb-[50px]">
-            <h1 class="text-3xl text-[#0F0F0F] font-extrabold ms-[330px] pt-7 pb-7">Nerdy</h1>
-            <ul class="flex items-center gap-7 justify-center pb-7">
+    <footer class="container mx-auto h-[500px] mb-[50px] md:flex md:justify-center items-center shadow">
+        <div class=" lg:h-[200px] lg:w-[800px] mb-[50px]">
+            <h1 class="text-3xl text-[#0F0F0F] font-extrabold md:ms-[150px] lg:ms-[430px] ms-[170px] pt-7 pb-7">Nerdy</h1>
+            <ul class="lg:flex lg:items-center gap-7 lg:justify-center pb-7 ms-[170px] lg:space-y-0 space-y-6">
                 <li><a href="#" class="text-xl text-[#0F0F0F]">Home</a></li>
                 <li><a href="#" class="text-xl text-[#0F0F0F]">Project</a></li>
                 <li><a href="#" class="text-xl text-[#0F0F0F]">About</a></li>
                 <li><a href="#" class="text-xl text-[#0F0F0F]">Contact</a></li>
             </ul>
-            <div class="flex gap-7 justify-center">
+            <div class="flex gap-7 lg:justify-center ms-[100px]">
                 <a href="https://www.facebook.com/"><img src="./image/fb.png" alt=""></a>
-                <a href="https://x.com/?lang=en" ><img src="./image/twitter-logo-2 3.png" alt=""></a>
+                <a href="https://x.com/?lang=en"><img src="./image/twitter-logo-2 3.png" alt=""></a>
                 <a href="https://bd.linkedin.com/"><img src="./image/linkedin-icon 1.png" alt=""></a>
                 <a href="https://www.youtube.com/"><img src="./image/youtube.png" alt=""></a>
             </div>
             <form action="#" class="bg-white p-6 rounded-lg shadow mt-7">
                 <div class="flex items-center space-x-4">
-                    <input 
-                        type="email" 
-                        name="email" 
-                        placeholder="Enter your email" 
-                        required 
-                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    >
-                    <button 
-                        type="submit" 
+                    <input type="email" name="email" placeholder="Enter your email" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    <button type="submit"
                         class="px-6 py-2 text-2xl w-[150px] bg-[#D8FB78] rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
                         Submit
                     </button>
                 </div>
             </form>
         </div>
-     </footer>
+    </footer>
     <!-- footer section end -->
 
 </body>
