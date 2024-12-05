@@ -1,2 +1,3 @@
 Site Link: https://assignment-1-tailwind.surge.sh/
+Site Link: https://tailwind-css-assignment-1.netlify.app/
 Codepen Link: https://codepen.io/aishaker129/pen/XJrWNEE
